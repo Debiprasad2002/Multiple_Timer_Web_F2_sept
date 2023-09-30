@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Timer Web</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h2>Multiple Timers App</h2>
+        <section class="timer-section">
+        <p>Set Time:</p>
+        <div class="set-time">
+            <input type="text" id="hours" placeholder="hh" />
+            <label for="">:</label>
+            <input type="text" id="minutes" placeholder="mm" />
+            <label for="">:</label>
+            <input type="text" id="seconds" placeholder="ss" />
+        </div>
+        <button class="btn">Set</button>
+        </section>
+        <div id="current-timer">
+        <p>Current Timers</p>
+        </div>
+
+        <section id="active-timers-section">
+            <p id="no-timers-message">You have no timers currently!</p>
+        <!-- Active Timers Display Section -->
+        </section>
+
+        <!-- Alert  -->
+        <audio id="alert-sound">
+            <source src="./alert.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        
+        <script src="script.js"></script>
+    </body>
+    </html>

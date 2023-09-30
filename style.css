@@ -1,0 +1,262 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(29,29,35);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Style the timer section */
+.timer-section {
+    margin: auto;
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(52,52,74); 
+    border-radius: 10px;
+    margin-bottom: 20px;    
+}
+
+.timer-section p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.timer-section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.timer-section input[type="text"] {    
+    width: 45px;
+    padding: 5px;
+    font-size: 25px;
+    text-decoration: underline;
+    background-color: transparent;
+    color: white;
+    border: none;   
+    border-radius: 5px;
+    margin: 0 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.timer-section input[type="text"]:focus {
+    outline: none; 
+    border: none; 
+}
+
+.timer-section input[type="text"]::placeholder {
+    color: white; 
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.timer-section label {
+    font-size: 18px;
+}
+
+.timer-section .btn {
+    padding: 8px 35px;
+    font-size: 16px;
+    background-color: yellow; 
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.timer-section .btn:focus {
+    outline: none; 
+    border: none; 
+}
+
+.timer-section .btn:hover {
+    background-color: #ffca28; 
+}
+
+#current-timer{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 15%;
+    padding: 1px;
+    border-radius: 30px;
+    background-color: rgb(57,57,62);
+}
+
+#current-timer p {
+    /* font-size: 15px; */
+    text-align: center;
+}
+
+/* timer display */
+.timer-display {
+    width: 40%;
+    padding: 10px;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+.timers-Element{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10%;
+    margin: auto;
+    width: 35%;
+    padding: 1px 30px 1px 0px;
+    border-radius: 10px;
+    margin-bottom: 20px;  
+    background-color: rgb(238, 255, 0);
+}
+
+.timers-Element h1{
+    color: black;
+    font-size: 30px;
+}
+
+.timers-Element .stop-button{
+    padding: 8px 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgb(57,57,62); 
+    color: white;
+}
+
+.timers-Element .stop-button:focus {
+    outline: none; 
+    border: none; 
+}
+
+
+
+/* Media query for large screens */
+@media screen  and (min-width: 1024px) {
+    .timer-section, .timers-Element {
+        width: 35%; 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .timer-section , .timers-Element{
+        width: 50%; 
+    }
+    
+}
+
+@media screen and (min-width: 424px) and (max-width: 768px) {
+    
+    h2{
+        font-size: medium;
+    }
+
+    #current-timer{
+         width: 25%;
+        background-color: rgb(57,57,62); 
+    }
+    
+    #current-timer p {
+        font-size: 14px;
+        text-align: center;
+    }
+   
+    .timer-section{
+        width: 50%; 
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .timers-Element{
+        width: 50%; 
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
+    }
+
+    .timers-Element h1{
+        font-size: medium;
+    }
+
+    .timers-Element .stop-button{
+        padding-left: 15px;
+        width: 10%;
+        font-size: small;
+        text-align: center;
+    }
+
+    .timer-display {
+        width: 55%;
+        padding: 10px;
+        font-size: 25px;
+        background-color: transparent;
+        color: white;
+        border-radius: 5px;
+    }
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 424px) {
+
+    h2{
+        font-size: medium;
+    }
+   
+    #current-timer{
+        width: 35%;
+       background-color: rgb(57,57,62); 
+   }
+   
+   #current-timer p {
+       font-size: 12px;
+       text-align: center;
+   }
+   
+    .timer-section{
+        width: 50%; 
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .timers-Element{
+        width: 50%; 
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
+    }
+
+    .timers-Element h1{
+        font-size: medium;
+    }
+
+    .timers-Element .stop-button{
+        padding-left: 15px;
+        width: 10%;
+        font-size: small;
+        text-align: center;
+    }
+
+    .timer-display {
+        width: 55%;
+        padding: 10px;
+        font-size: 15px;
+        background-color: transparent;
+        color: white;
+        border-radius: 5px;
+    }
+
+}
